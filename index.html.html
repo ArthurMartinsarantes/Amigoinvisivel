@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>🎄 Amigo Secreto de Natal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ❄️ Neve -->
+<canvas id="neve"></canvas>
+
+<!-- 🎄 Árvore -->
+<div class="arvore">
+    <div class="estrela">★</div>
+    <div class="galho luzes-arvore"></div>
+    <div class="galho luzes-arvore"></div>
+    <div class="galho luzes-arvore"></div>
+    <div class="tronco"></div>
+</div>
+
+<!-- 💌 Card principal -->
+<div class="card">
+    <div class="luzes"></div>
+
+    <h1>🎅 Amigo Secreto de Natal 🎄</h1>
+    <p class="texto">
+        Clique no seu presente para descobrir<br>
+        quem você tirou neste Natal ✨
+    </p>
+
+    <!-- 🎁 Presentes -->
+    <div class="gifts-container" id="giftsContainer"></div>
+
+    <button class="reset-btn" onclick="resetGame()">🎄 Começar tudo de novo</button>
+</div>
+
+<!-- 🎁 Modal -->
+<div class="modal" id="modal">
+    <div class="modal-conteudo">
+        <h2 id="modalTitle"></h2>
+        <p id="modalResult"></p>
+        <button onclick="closeModal()">Fechar</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
